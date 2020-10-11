@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --main-bg-color: red;
+  --main-bg-color: #6f42c1;
 
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8432,9 +8432,11 @@ h1, h2, h3, h4, h5,
 
 .slider-text p {
   font-size: 20px;
-  line-height: 1.5;
+  color: grey
+  /* line-height: 1.5;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.8); */
+} 
   .slider-text p strong {
     font-weight: 700; }
     .slider-text p strong a {
