@@ -2,7 +2,6 @@
 // - Responsive image
 // - Retina image
 
-
 // Responsive image
 //
 // Keep images from scaling beyond the width of their parents.
@@ -14,7 +13,6 @@
   // when setting a width and height attribute on the img element.
   height: auto;
 }
-
 
 // Retina image
 //
@@ -32,5 +30,6 @@
     background-image: url($file-2x);
     background-size: $width-1x $height-1x;
   }
+
   @include deprecate("`img-retina()`", "v4.3.0", "v5");
 }

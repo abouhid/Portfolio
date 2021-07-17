@@ -7,7 +7,6 @@
 //
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
 
-
 // Document
 //
 // 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
@@ -46,7 +45,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0; // 1
   font-family: $font-family-base;
+
   @include font-size($font-size-base);
+
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
@@ -63,7 +64,6 @@ body {
   outline: 0 !important;
 }
 
-
 // Content grouping
 //
 // 1. Add the correct box sizing in Firefox.
@@ -74,7 +74,6 @@ hr {
   height: 0; // 1
   overflow: visible; // 2
 }
-
 
 //
 // Typography
@@ -141,7 +140,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; // Undo browser default
 }
 
@@ -166,14 +165,15 @@ small {
 sub,
 sup {
   position: relative;
+
   @include font-size(75%);
+
   line-height: 0;
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
-
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
 
 //
 // Links
@@ -210,7 +210,6 @@ a:not([href]):not([tabindex]) {
   }
 }
 
-
 //
 // Code
 //
@@ -220,6 +219,7 @@ code,
 kbd,
 samp {
   font-family: $font-family-monospace;
+
   @include font-size(1em); // Correct the odd `em` font sizing in all browsers.
 }
 
@@ -232,7 +232,6 @@ pre {
   overflow: auto;
 }
 
-
 //
 // Figures
 //
@@ -241,7 +240,6 @@ figure {
   // Apply a consistent margin strategy (matches our type styles).
   margin: 0 0 1rem;
 }
-
 
 //
 // Images and content
@@ -258,7 +256,6 @@ svg {
   overflow: hidden;
   vertical-align: middle;
 }
-
 
 //
 // Tables
@@ -281,7 +278,6 @@ th {
   // closest parent with a set `text-align`.
   text-align: inherit;
 }
-
 
 //
 // Forms
@@ -317,7 +313,9 @@ optgroup,
 textarea {
   margin: 0; // Remove the margin in Firefox and Safari
   font-family: inherit;
+
   @include font-size(inherit);
+
   line-height: inherit;
 }
 
@@ -337,7 +335,6 @@ select {
 select {
   word-wrap: normal;
 }
-
 
 // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
 //    controls in Android 4.
@@ -375,7 +372,6 @@ input[type="checkbox"] {
   box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
   padding: 0; // 2. Remove the padding in IE 10-
 }
-
 
 input[type="date"],
 input[type="time"],
@@ -415,8 +411,10 @@ legend {
   width: 100%;
   max-width: 100%; // 1
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+
   @include font-size(1.5rem);
+
   line-height: inherit;
   color: inherit; // 2
   white-space: normal; // 1

@@ -40,6 +40,7 @@
 
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
+
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
@@ -68,7 +69,6 @@
   }
 }
 
-
 //
 // Pills
 //
@@ -84,7 +84,6 @@
     background-color: $nav-pills-link-active-bg;
   }
 }
-
 
 //
 // Justified variants
@@ -105,7 +104,6 @@
   }
 }
 
-
 // Tabbable tabs
 //
 // Hide tabbable panes to start, show them when `.active`
@@ -114,6 +112,7 @@
   > .tab-pane {
     display: none;
   }
+
   > .active {
     display: block;
   }

@@ -11,6 +11,7 @@
   background-color: $card-bg;
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
+
   @include border-radius($card-border-radius);
 
   > hr {
@@ -94,7 +95,6 @@
   }
 }
 
-
 //
 // Header navs
 //
@@ -123,20 +123,22 @@
 
 .card-img {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+
   @include border-radius($card-inner-border-radius);
 }
 
 // Card image caps
 .card-img-top {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+
   @include border-top-radius($card-inner-border-radius);
 }
 
 .card-img-bottom {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+
   @include border-bottom-radius($card-inner-border-radius);
 }
-
 
 // Card deck
 
@@ -164,7 +166,6 @@
     }
   }
 }
-
 
 //
 // Card groups
@@ -204,6 +205,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-right-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -219,6 +221,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-left-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -229,7 +232,6 @@
     }
   }
 }
-
 
 //
 // Columns
@@ -253,7 +255,6 @@
   }
 }
 
-
 //
 // Accordion
 //
@@ -269,12 +270,14 @@
 
       &:not(:last-of-type) {
         border-bottom: 0;
+
         @include border-radius(0);
       }
     }
 
     &:first-of-type {
       border-bottom: 0;
+
       @include border-bottom-radius(0);
     }
 

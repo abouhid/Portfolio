@@ -49,6 +49,7 @@
     pre {
       white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
       border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
@@ -89,9 +90,11 @@
     @page {
       size: $print-page-size;
     }
+
     body {
       min-width: $print-body-min-width !important;
     }
+
     .container {
       min-width: $print-body-min-width !important;
     }
@@ -100,6 +103,7 @@
     .navbar {
       display: none;
     }
+
     .badge {
       border: $border-width solid $black;
     }

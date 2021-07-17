@@ -1,6 +1,8 @@
 @mixin alert-variant($background, $border, $color) {
   color: $color;
+
   @include gradient-bg($background);
+
   border-color: $border;
 
   hr {

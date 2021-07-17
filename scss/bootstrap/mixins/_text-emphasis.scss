@@ -6,6 +6,7 @@
   #{$parent} {
     color: $color !important;
   }
+
   @if $emphasized-link-hover-darken-percentage != 0 {
     a#{$parent} {
       @include hover-focus {

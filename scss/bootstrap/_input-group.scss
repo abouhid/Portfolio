@@ -59,7 +59,6 @@
   }
 }
 
-
 // Prepend and append
 //
 // While it requires one extra layer of HTML for each, dedicated prepend and
@@ -93,7 +92,6 @@
 .input-group-prepend { margin-right: -$input-border-width; }
 .input-group-append { margin-left: -$input-border-width; }
 
-
 // Textual addons
 //
 // Serves as a catch-all element for any text or radio/checkbox input you wish
@@ -104,7 +102,9 @@
   align-items: center;
   padding: $input-padding-y $input-padding-x;
   margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
+
   @include font-size($input-font-size); // Match inputs
+
   font-weight: $font-weight-normal;
   line-height: $input-line-height;
   color: $input-group-addon-color;
@@ -112,6 +112,7 @@
   white-space: nowrap;
   background-color: $input-group-addon-bg;
   border: $input-border-width solid $input-group-addon-border-color;
+
   @include border-radius($input-border-radius);
 
   // Nuke default margins from checkboxes and radios to vertically center within.
@@ -120,7 +121,6 @@
     margin-top: 0;
   }
 }
-
 
 // Sizing
 //
@@ -139,8 +139,11 @@
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: $input-padding-y-lg $input-padding-x-lg;
+
   @include font-size($input-font-size-lg);
+
   line-height: $input-line-height-lg;
+
   @include border-radius($input-border-radius-lg);
 }
 
@@ -156,8 +159,11 @@
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: $input-padding-y-sm $input-padding-x-sm;
+
   @include font-size($input-font-size-sm);
+
   line-height: $input-line-height-sm;
+
   @include border-radius($input-border-radius-sm);
 }
 
@@ -166,13 +172,11 @@
   padding-right: $custom-select-padding-x + $custom-select-indicator-padding;
 }
 
-
 // Prepend and append rounded corners
 //
 // These rulesets must come after the sizing ones to properly override sm and lg
 // border-radius values when extending. They're more specific than we'd like
 // with the `.input-group >` part, but without it, we cannot override the sizing.
-
 
 .input-group > .input-group-prepend > .btn,
 .input-group > .input-group-prepend > .input-group-text,

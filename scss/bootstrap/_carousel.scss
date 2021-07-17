@@ -23,6 +23,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+
   @include clearfix();
 }
 
@@ -33,6 +34,7 @@
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
+
   @include transition($carousel-transition);
 }
 
@@ -51,7 +53,6 @@
 .active.carousel-item-left {
   transform: translateX(-100%);
 }
-
 
 //
 // Alternate transitions
@@ -75,10 +76,10 @@
   .active.carousel-item-right {
     z-index: 0;
     opacity: 0;
+
     @include transition(0s $carousel-transition-duration opacity);
   }
 }
-
 
 //
 // Left/right controls for nav
@@ -98,6 +99,7 @@
   color: $carousel-control-color;
   text-align: center;
   opacity: $carousel-control-opacity;
+
   @include transition($carousel-control-transition);
 
   // Hover/focus state
@@ -108,16 +110,20 @@
     opacity: $carousel-control-hover-opacity;
   }
 }
+
 .carousel-control-prev {
   left: 0;
+
   @if $enable-gradients {
-    background: linear-gradient(90deg, rgba($black, .25), rgba($black, .001));
+    background: linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001));
   }
 }
+
 .carousel-control-next {
   right: 0;
+
   @if $enable-gradients {
-    background: linear-gradient(270deg, rgba($black, .25), rgba($black, .001));
+    background: linear-gradient(270deg, rgba($black, 0.25), rgba($black, 0.001));
   }
 }
 
@@ -129,13 +135,14 @@
   height: $carousel-control-icon-width;
   background: no-repeat 50% / 100% 100%;
 }
+
 .carousel-control-prev-icon {
   background-image: $carousel-control-prev-icon-bg;
 }
+
 .carousel-control-next-icon {
   background-image: $carousel-control-next-icon-bg;
 }
-
 
 // Optional indicator pips
 //
@@ -170,7 +177,8 @@
     // Use transparent borders to increase the hit area by 10px on top and bottom.
     border-top: $carousel-indicator-hit-area-height solid transparent;
     border-bottom: $carousel-indicator-hit-area-height solid transparent;
-    opacity: .5;
+    opacity: 0.5;
+
     @include transition($carousel-indicator-transition);
   }
 
@@ -178,7 +186,6 @@
     opacity: 1;
   }
 }
-
 
 // Optional captions
 //

@@ -10,7 +10,9 @@
   height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
+
   @include font-size($input-font-size);
+
   font-weight: $input-font-weight;
   line-height: $input-line-height;
   color: $input-color;
@@ -20,7 +22,6 @@
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @include border-radius($input-border-radius, 0);
-
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
@@ -72,7 +73,6 @@ select.form-control {
   width: 100%;
 }
 
-
 //
 // Labels
 //
@@ -83,24 +83,29 @@ select.form-control {
   padding-top: calc(#{$input-padding-y} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
   margin-bottom: 0; // Override the `<label>/<legend>` default
+
   @include font-size(inherit); // Override the `<legend>` default
+
   line-height: $input-line-height;
 }
 
 .col-form-label-lg {
   padding-top: calc(#{$input-padding-y-lg} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-width});
+
   @include font-size($input-font-size-lg);
+
   line-height: $input-line-height-lg;
 }
 
 .col-form-label-sm {
   padding-top: calc(#{$input-padding-y-sm} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-width});
+
   @include font-size($input-font-size-sm);
+
   line-height: $input-line-height-sm;
 }
-
 
 // Readonly controls as plain text
 //
@@ -126,7 +131,6 @@ select.form-control {
   }
 }
 
-
 // Form control sizing
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
@@ -137,16 +141,22 @@ select.form-control {
 .form-control-sm {
   height: $input-height-sm;
   padding: $input-padding-y-sm $input-padding-x-sm;
+
   @include font-size($input-font-size-sm);
+
   line-height: $input-line-height-sm;
+
   @include border-radius($input-border-radius-sm);
 }
 
 .form-control-lg {
   height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
+
   @include font-size($input-font-size-lg);
+
   line-height: $input-line-height-lg;
+
   @include border-radius($input-border-radius-lg);
 }
 
@@ -176,7 +186,6 @@ textarea.form-control {
   margin-top: $form-text-margin-top;
 }
 
-
 // Form grid
 //
 // Special replacement for our grid system's `.row` for tighter form layouts.
@@ -193,7 +202,6 @@ textarea.form-control {
     padding-left: $form-grid-gutter-width / 2;
   }
 }
-
 
 // Checkboxes and radios
 //
@@ -233,7 +241,6 @@ textarea.form-control {
     margin-left: 0;
   }
 }
-
 
 // Form validation
 //
@@ -311,6 +318,7 @@ textarea.form-control {
       width: auto;
       padding-left: 0;
     }
+
     .form-check-input {
       position: relative;
       flex-shrink: 0;
@@ -323,6 +331,7 @@ textarea.form-control {
       align-items: center;
       justify-content: center;
     }
+
     .custom-control-label {
       margin-bottom: 0;
     }
